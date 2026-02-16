@@ -26,7 +26,7 @@ Thanks!
 
 ## Installation
 
-**Note:** Installation differs by platform. Claude Code has a built-in plugin system. Codex and OpenCode require manual setup.
+**Note:** Installation differs by platform. Claude Code has a built-in plugin system. Codex, OpenCode, and Augment require manual setup.
 
 ### Claude Code (via Plugin Marketplace)
 
@@ -45,6 +45,26 @@ Then install the plugin from this marketplace:
 ### Verify Installation
 
 Start a new session and ask Claude to help with something that would trigger a skill (e.g., "help me plan this feature" or "let's debug this issue"). Claude should automatically invoke the relevant superpowers skill.
+
+### Augment
+
+**macOS / Linux:**
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/obra/superpowers/main/.augment/install.sh)
+```
+
+**Windows (PowerShell):**
+```powershell
+git clone https://github.com/obra/superpowers.git "$env:USERPROFILE\.augment\superpowers"
+& "$env:USERPROFILE\.augment\superpowers\.augment\install.ps1"
+```
+
+Then add to your project's `.augment/instructions.md`:
+```markdown
+@~/.augment/superpowers-instructions.md
+```
+
+**Detailed docs:** [docs/README.augment.md](docs/README.augment.md)
 
 ### Codex
 
