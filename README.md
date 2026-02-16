@@ -11,7 +11,7 @@ If this sounds like someone you know, definitely send them our way.
 
 ## Quickstart
 
-Give your agent Superpowers: [Claude Code](#claude-code), [Antigravity](#antigravity), [Codex App](#codex-app), [Codex CLI](#codex-cli), [Cursor](#cursor), [Factory Droid](#factory-droid), [Gemini CLI](#gemini-cli), [GitHub Copilot CLI](#github-copilot-cli), [Kimi Code](#kimi-code), [OpenCode](#opencode), [Pi](#pi).
+Give your agent Superpowers: [Claude Code](#claude-code), [Antigravity](#antigravity), [Codex App](#codex-app), [Augment](#augment), [Codex CLI](#codex-cli), [Cursor](#cursor), [Factory Droid](#factory-droid), [Gemini CLI](#gemini-cli), [GitHub Copilot CLI](#github-copilot-cli), [Kimi Code](#kimi-code), [OpenCode](#opencode), [Pi](#pi).
 
 ## How it works
 
@@ -79,6 +79,26 @@ Superpowers is available via the [official Codex plugin marketplace](https://git
 - In the Codex app, click on Plugins in the sidebar.
 - You should see `Superpowers` in the Coding section.
 - Click the `+` next to Superpowers and follow the prompts.
+
+### Augment
+
+**macOS / Linux:**
+```bash
+bash <(curl -fsSL https://raw.githubusercontent.com/obra/superpowers/main/.augment/install.sh)
+```
+
+**Windows (PowerShell):**
+```powershell
+git clone https://github.com/obra/superpowers.git "$env:USERPROFILE\.augment\superpowers"
+& "$env:USERPROFILE\.augment\superpowers\.augment\install.ps1"
+```
+
+Then add to your project's `.augment/instructions.md`:
+```markdown
+@~/.augment/superpowers-instructions.md
+```
+
+**Detailed docs:** [docs/README.augment.md](docs/README.augment.md)
 
 ### Codex CLI
 
